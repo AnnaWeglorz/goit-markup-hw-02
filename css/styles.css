@@ -1,19 +1,25 @@
+:root {
+  --brand-color: #212121;
+  --selection-color: #2196f3;
+  --background-color: #f5f4fa;
+  --navigation-contacts-color: #757575;
+}
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #f5f4fa;
-  color: #212121;
+  background-color: var(--background-color);
+  color: var(--brand-color);
 }
-a {
+.link {
   text-decoration: none;
-  color: #212121;
-  cursor: pointer;
+  color: var(--brand-color);
 }
-button {
-  cursor: pointer;
+.link:hover,
+.link:focus,
+.link:active {
+  color: var(--selection-color);
 }
-a:hover,
-a:focus {
-  color: #2196f3;
+.link:visited {
+  text-decoration: none;
 }
 .logo {
   font-family: 'Raleway';
@@ -26,41 +32,42 @@ a:focus {
 }
 
 .web {
-  color: #2196f3;
+  color: var(--selection-color);
 }
 .studio {
   color: #000000;
 }
-.navigation > header {
+.navigation {
   display: block;
   list-style-type: none;
 }
-.navigation ul {
+.navigation a:hover,
+.navigation a:focus {
+  color: var(--selection-color);
+}
+.navigation-list {
   display: flex;
   list-style-type: none;
   font-family: inherit;
   font-weight: 500;
   font-size: 14px;
 }
-.navigation-items li {
+.navigation-items {
   margin-left: 46px;
   display: inline;
 }
-.navigation-contacts {
+
+.navigation-contacts-items {
+  margin-left: 46px;
+  display: inline;
   font-family: inherit;
   font-weight: 500;
   font-size: 14px;
+  list-style-type: none;
 }
-.navigation-contacts li {
-  margin-left: 46px;
-  display: inline;
-}
-.navigation-contacts a {
-  color: #757575;
-}
-.navigation-contacts a:hover,
+.navigation-contacts-items a:hover,
 a:focus {
-  color: #2196f3;
+  color: var(--selection-color);
 }
 .header {
   background-color: #2f303a;
@@ -72,7 +79,6 @@ a:focus {
 .header-font {
   font-family: inherit;
   font-size: 44px;
-  font-style: normal;
   font-weight: 900;
   line-height: 1.36;
   line-height: 116%;
@@ -87,9 +93,8 @@ a:focus {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  background-color: #2196f3;
+  background-color: var(--selection-color);
   border-radius: 4px;
-  cursor: pointer;
   border-style: none;
 }
 .button:active,
@@ -100,10 +105,9 @@ a:focus {
   display: flex;
   list-style-type: none;
 }
-.lorem-ipsum p {
+.lorem-ipsum-paragraph {
   color: #757575;
   font-family: inherit;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   text-align: left;
@@ -117,9 +121,10 @@ a:focus {
   display: flex;
   list-style-type: none;
 }
-.services li {
+.services-items {
   margin-left: 46px;
 }
+
 .header-team {
   text-align: center;
 }
@@ -164,7 +169,6 @@ a:focus {
   text-align: left;
   letter-spacing: 0.03em;
   color: #ffffff;
-  font-style: normal;
 }
 .footer-contacts {
   color: rgba(255, 255, 255, 0.6);
@@ -174,7 +178,6 @@ a:focus {
   text-align: left;
   vertical-align: top;
   letter-spacing: 0.03em;
-  font-style: normal;
 }
 .button-all:active,
 .button-sites:active,
@@ -187,71 +190,82 @@ a:focus {
 .button-design:hover,
 .button-marketing:hover {
   color: #ffffff;
-  background-color: #2196f3;
+  background-color: var(--selection-color);
+}
+.buttons {
+  list-style-type: none;
 }
 .button-all {
   width: 121px;
   height: 38px;
   font-family: 'roboto';
-  background-color: #f5f4fa;
+  background-color: var(--background-color);
   border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  cursor: pointer;
 }
 .button-sites {
   width: 93px;
   height: 38px;
   font-family: 'roboto';
-  background-color: #f5f4fa;
+  background-color: var(--background-color);
   border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--brand-color);
+  cursor: pointer;
 }
 .button-applications {
   width: 114px;
   height: 38px;
   font-family: 'roboto';
-  background-color: #f5f4fa;
+  background-color: var(--background-color);
   border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--brand-color);
+  cursor: pointer;
 }
 .button-design {
   width: 91px;
   height: 38px;
   font-family: 'roboto';
-  background-color: #f5f4fa;
+  background-color: var(--background-color);
   border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--brand-color);
+  cursor: pointer;
 }
 .button-marketing {
   width: 121px;
   height: 38px;
   font-family: 'roboto';
-  background-color: #f5f4fa;
+  background-color: var(--background-color);
   border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--brand-color);
+  cursor: pointer;
+}
+.portfolio {
+  list-style-type: none;
 }
 .portfolio-project-name {
   height: 36px;
@@ -263,7 +277,6 @@ a:focus {
 .portfolio-project-type {
   width: 322px;
   height: 30px;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
