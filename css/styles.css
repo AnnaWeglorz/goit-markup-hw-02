@@ -3,6 +3,8 @@
   --selection-color: #2196f3;
   --background-color: #f5f4fa;
   --navigation-contacts-color: #757575;
+  --button-font-color:#ffffff;
+  --background-footer-header-color:#2f303a;
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -41,8 +43,7 @@ body {
   display: block;
   list-style-type: none;
 }
-.navigation a:hover,
-.navigation a:focus {
+.navigation {
   color: var(--selection-color);
 }
 .navigation-list {
@@ -65,13 +66,12 @@ body {
   font-size: 14px;
   list-style-type: none;
 }
-.navigation-contacts-items a:hover,
-a:focus {
+.navigation-contacts-items{
   color: var(--selection-color);
 }
 .header {
-  background-color: #2f303a;
-  color: #ffffff;
+  background-color: var(--background-footer-header-color);
+  color: var(--button-font-color);
   width: 1600px;
   height: 600px;
   text-align: center;
@@ -88,7 +88,7 @@ a:focus {
   width: 200px;
   height: 50px;
   font: inherit;
-  color: #ffffff;
+  color: var(--button-font-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -155,12 +155,12 @@ a:focus {
 }
 
 .footer {
-  background-color: #2f303a;
+  background-color:var(--background-footer-header-color);
   position: absolute;
   width: 1600px;
 }
 .studio-footer {
-  color: #ffffff;
+  color: var(--button-font-color);
 }
 .address {
   font-family: inherit;
@@ -168,7 +168,9 @@ a:focus {
   line-height: 1.71;
   text-align: left;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--button-font-color);
+  font-style: normal;
+  
 }
 .footer-contacts {
   color: rgba(255, 255, 255, 0.6);
@@ -178,6 +180,8 @@ a:focus {
   text-align: left;
   vertical-align: top;
   letter-spacing: 0.03em;
+  font-style:normal;
+  text-decoration: none;
 }
 .button-all:active,
 .button-sites:active,
@@ -189,7 +193,7 @@ a:focus {
 .button-applications:hover,
 .button-design:hover,
 .button-marketing:hover {
-  color: #ffffff;
+  color: var(--button-font-color);
   background-color: var(--selection-color);
 }
 .buttons {
