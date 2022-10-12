@@ -161,11 +161,9 @@ body {
   background-color: var(--background-footer-header-color);
   position: absolute;
   width: 1600px;
-  text-decoration: none;
 }
 .studio-footer {
   color: var(--button-font-color);
-  text-decoration: none;
 }
 .address {
   font-family: inherit;
