@@ -31,13 +31,16 @@ body {
   text-align: left;
   vertical-align: top;
   letter-spacing: 0.03em;
+  text-decoration: none;
 }
 
 .web {
   color: var(--selection-color);
+  text-decoration: none;
 }
 .studio {
   color: #000000;
+  text-decoration: none;
 }
 .navigation {
   display: block;
@@ -158,9 +161,11 @@ body {
   background-color: var(--background-footer-header-color);
   position: absolute;
   width: 1600px;
+  text-decoration: none;
 }
 .studio-footer {
   color: var(--button-font-color);
+  text-decoration: none;
 }
 .address {
   font-family: inherit;
