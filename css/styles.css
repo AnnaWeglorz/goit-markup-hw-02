@@ -3,8 +3,8 @@
   --selection-color: #2196f3;
   --background-color: #f5f4fa;
   --navigation-contacts-color: #757575;
-  --button-font-color:#ffffff;
-  --background-footer-header-color:#2f303a;
+  --button-font-color: #ffffff;
+  --background-footer-header-color: #2f303a;
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -66,7 +66,7 @@ body {
   font-size: 14px;
   list-style-type: none;
 }
-.navigation-contacts-items{
+.navigation-contacts-items {
   color: var(--selection-color);
 }
 .header {
@@ -133,7 +133,7 @@ body {
   list-style-type: none;
 }
 .team-member {
-  font-family: 'Roboto';
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -155,7 +155,7 @@ body {
 }
 
 .footer {
-  background-color:var(--background-footer-header-color);
+  background-color: var(--background-footer-header-color);
   position: absolute;
   width: 1600px;
 }
@@ -170,7 +170,6 @@ body {
   letter-spacing: 0.03em;
   color: var(--button-font-color);
   font-style: normal;
-  
 }
 .footer-contacts {
   color: rgba(255, 255, 255, 0.6);
@@ -180,7 +179,7 @@ body {
   text-align: left;
   vertical-align: top;
   letter-spacing: 0.03em;
-  font-style:normal;
+  font-style: normal;
   text-decoration: none;
 }
 .button-all:active,
@@ -202,7 +201,7 @@ body {
 .button-all {
   width: 121px;
   height: 38px;
-  font-family: 'roboto';
+  font-family: inherit;
   background-color: var(--background-color);
   border-radius: 4px;
   font-weight: 500;
@@ -215,7 +214,7 @@ body {
 .button-sites {
   width: 93px;
   height: 38px;
-  font-family: 'roboto';
+  font-family: inherit;
   background-color: var(--background-color);
   border-radius: 4px;
   font-weight: 500;
@@ -229,7 +228,7 @@ body {
 .button-applications {
   width: 114px;
   height: 38px;
-  font-family: 'roboto';
+  font-family: inherit;
   background-color: var(--background-color);
   border-radius: 4px;
   font-weight: 500;
@@ -243,7 +242,7 @@ body {
 .button-design {
   width: 91px;
   height: 38px;
-  font-family: 'roboto';
+  font-family: inherit;
   background-color: var(--background-color);
   border-radius: 4px;
   font-weight: 500;
@@ -257,7 +256,7 @@ body {
 .button-marketing {
   width: 121px;
   height: 38px;
-  font-family: 'roboto';
+  font-family: inherit;
   background-color: var(--background-color);
   border-radius: 4px;
   font-weight: 500;
